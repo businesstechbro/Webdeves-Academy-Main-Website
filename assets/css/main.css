@@ -32963,7 +32963,7 @@ body.tp-magic-cursor #magic-cursor {
 }
 @media (max-width: 767px) {
   .sll {
-    padding-left: 50px;
+    padding-left: 20px;
   }
 }
 .skew-slider-content h4 {
