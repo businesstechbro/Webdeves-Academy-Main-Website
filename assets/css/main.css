@@ -32948,21 +32948,26 @@ body.tp-magic-cursor #magic-cursor {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .skew-slider-content {
-    padding-left: 200px;
+    padding-left: 50px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .skew-slider-content {
-    padding-left: 150px;
+    padding-left: 50px;
   }
 }
 @media (max-width: 767px) {
   .skew-slider-content {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .sll {
     padding-left: 50px;
   }
 }
 .skew-slider-content h4 {
-  font-size: 140px;
+  font-size: 100px;
   line-height: 0.9;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -32974,22 +32979,22 @@ body.tp-magic-cursor #magic-cursor {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .skew-slider-content h4 {
-    font-size: 70px;
+    font-size: 90px !important;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .skew-slider-content h4 {
-    font-size: 50px;
+    font-size: 80px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .skew-slider-content h4 {
-    font-size: 40px;
+    font-size: 70px !important;
   }
 }
 @media (max-width: 767px) {
   .skew-slider-content h4 {
-    font-size: 30px;
+    font-size: 40px !important;
   }
 }
 .skew-slider-content > span {
