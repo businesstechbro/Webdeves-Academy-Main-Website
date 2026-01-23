@@ -32948,7 +32948,7 @@ body.tp-magic-cursor #magic-cursor {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .skew-slider-content {
-    padding-left: 50px;
+    padding-left: 180px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
