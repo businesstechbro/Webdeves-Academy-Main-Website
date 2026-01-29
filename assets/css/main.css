@@ -24535,8 +24535,20 @@ body.tp-magic-cursor #magic-cursor {
   background: var(--tp-common-white);
   box-shadow: 0px 4px 12px 0px rgba(33, 33, 45, 0.08);
 }
+@media (max-width: 767px) {
+  .app-testimonial-item {
+    min-width: 280px;
+    padding: 20px;
+    margin: 12px;
+  }
+}
 .app-testimonial-item-icon {
   margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .app-testimonial-item-icon {
+    margin-right: 12px;
+  }
 }
 .app-testimonial-item-icon span {
   display: inline-block;
@@ -24547,11 +24559,23 @@ body.tp-magic-cursor #magic-cursor {
   border-radius: 50%;
   border: 1px solid rgba(33, 33, 45, 0.08);
 }
+@media (max-width: 767px) {
+  .app-testimonial-item-icon span {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+}
 .app-testimonial-item-icon-title {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 0;
   color: var(--tp-common-black-10);
+}
+@media (max-width: 767px) {
+  .app-testimonial-item-icon-title {
+    font-size: 14px;
+  }
 }
 .app-testimonial-item-icon-content p {
   margin: 0;
@@ -24563,6 +24587,12 @@ body.tp-magic-cursor #magic-cursor {
 .app-testimonial-item-content p {
   color: #494954;
   letter-spacing: -0.18px;
+}
+@media (max-width: 767px) {
+  .app-testimonial-item-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .app-testimonial-item-content p br {
@@ -24577,10 +24607,15 @@ body.tp-magic-cursor #magic-cursor {
   align-items: flex-start;
   justify-content: flex-start;
   animation: marquee-horizontal 30s linear infinite;
+  overflow-x: hidden;
 }
 @media (max-width: 767px) {
   .app-testimonial-wrapper {
-    animation: marquee-horizontal 10s linear infinite;
+    animation: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 }
 .app-testimonial-wrapper:hover {
@@ -24592,6 +24627,8 @@ body.tp-magic-cursor #magic-cursor {
 @media (max-width: 767px) {
   .app-testimonial-slider {
     margin-left: 0;
+    display: flex;
+    gap: 12px;
   }
 }
 
