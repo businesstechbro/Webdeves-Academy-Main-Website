@@ -1,6 +1,47 @@
 (function ($) {
 	"use strict";
 
+	////app-testimonial-slider
+	var app_testimonial = new Swiper('.app-testimonial-wrapper', {
+		wrapperClass: 'app-testimonial-slider',
+		slideClass: 'app-testimonial-item',
+		loop: true,
+		freemode: false,
+		slidesPerView: 'auto',
+		spaceBetween: 34,
+		allowTouchMove: true,
+		speed: 8000,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			320: {
+				speed: 6000,
+				autoplay: {
+					delay: 4000,
+				},
+			},
+			768: {
+				speed: 8000,
+				autoplay: {
+					delay: 5000,
+				},
+			},
+		}
+	});
+
+	// Pause testimonial slider on hover (desktop)
+	const testimonialWrapper = document.querySelector('.app-testimonial-wrapper');
+	if (testimonialWrapper && window.innerWidth > 767) {
+		testimonialWrapper.addEventListener('mouseenter', function() {
+			app_testimonial.autoplay.stop();
+		});
+		testimonialWrapper.addEventListener('mouseleave', function() {
+			app_testimonial.autoplay.start();
+		});
+	}
+
 	////text-slider
 	var tp_brand_slide = new Swiper(".tp-text-slide-active", {
 		loop: true,

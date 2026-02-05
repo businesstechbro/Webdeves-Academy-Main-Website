@@ -2240,36 +2240,4 @@
 		});
 	}
 
-	// Testimonial slider auto-play with manual scroll on mobile
-	const testimonialWrapper = document.querySelector('.app-testimonial-wrapper');
-	if (testimonialWrapper) {
-		let scrollTimeout;
-		
-		// Pause animation on scroll
-		testimonialWrapper.addEventListener('scroll', function() {
-			testimonialWrapper.style.animationPlayState = 'paused';
-			
-			// Clear previous timeout
-			clearTimeout(scrollTimeout);
-			
-			// Resume animation after 3 seconds of no scrolling
-			scrollTimeout = setTimeout(function() {
-				testimonialWrapper.style.animationPlayState = 'running';
-			}, 3000);
-		}, { passive: true });
-		
-		// Pause on touch start
-		testimonialWrapper.addEventListener('touchstart', function() {
-			testimonialWrapper.style.animationPlayState = 'paused';
-		}, { passive: true });
-		
-		// Resume on touch end after delay
-		testimonialWrapper.addEventListener('touchend', function() {
-			clearTimeout(scrollTimeout);
-			scrollTimeout = setTimeout(function() {
-				testimonialWrapper.style.animationPlayState = 'running';
-			}, 3000);
-		}, { passive: true });
-	}
-
 })(jQuery);

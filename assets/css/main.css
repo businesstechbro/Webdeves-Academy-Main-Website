@@ -24811,20 +24811,16 @@ body.tp-magic-cursor #magic-cursor {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  animation: marquee-horizontal 35s linear infinite;
   overflow-x: hidden;
 }
 @media (max-width: 767px) {
   .app-testimonial-wrapper {
-    animation: marquee-horizontal 28s linear infinite;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
   }
 }
 .app-testimonial-wrapper:hover {
-  animation-play-state: paused;
+  /* Swiper handles pause on interaction */
 }
 .app-testimonial-slider {
   margin-left: 0;
