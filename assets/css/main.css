@@ -377,6 +377,135 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Desktop Responsive - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1170px;
+  }
+  .container-1830 {
+    max-width: 1170px;
+  }
+  .container-1800 {
+    max-width: 1170px;
+  }
+  .container-1750 {
+    max-width: 1170px;
+  }
+  .container-1730 {
+    max-width: 1170px;
+  }
+  .container-1680 {
+    max-width: 1170px;
+  }
+  .container-1630 {
+    max-width: 1170px;
+  }
+  .container-1610 {
+    max-width: 1170px;
+  }
+  .container-1580 {
+    max-width: 1170px;
+  }
+  .container-1550 {
+    max-width: 1170px;
+  }
+  .container-1530 {
+    max-width: 1170px;
+  }
+  .container-1460 {
+    max-width: 1170px;
+  }
+  .container-1430 {
+    max-width: 1170px;
+  }
+  .container-1350 {
+    max-width: 1170px;
+  }
+  .container-1330 {
+    max-width: 1170px;
+  }
+  .container-1320 {
+    max-width: 1170px;
+  }
+  .container-1300 {
+    max-width: 1170px;
+  }
+  .container-1230 {
+    max-width: 1170px;
+  }
+  .container-1200 {
+    max-width: 1170px;
+  }
+  .container-1030 {
+    max-width: 1030px;
+  }
+}
+
+/* Desktop Responsive - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 960px;
+  }
+  .container-1830 {
+    max-width: 960px;
+  }
+  .container-1800 {
+    max-width: 960px;
+  }
+  .container-1750 {
+    max-width: 960px;
+  }
+  .container-1730 {
+    max-width: 960px;
+  }
+  .container-1680 {
+    max-width: 960px;
+  }
+  .container-1630 {
+    max-width: 960px;
+  }
+  .container-1610 {
+    max-width: 960px;
+  }
+  .container-1580 {
+    max-width: 960px;
+  }
+  .container-1550 {
+    max-width: 960px;
+  }
+  .container-1530 {
+    max-width: 960px;
+  }
+  .container-1460 {
+    max-width: 960px;
+  }
+  .container-1430 {
+    max-width: 960px;
+  }
+  .container-1350 {
+    max-width: 960px;
+  }
+  .container-1330 {
+    max-width: 960px;
+  }
+  .container-1320 {
+    max-width: 960px;
+  }
+  .container-1300 {
+    max-width: 960px;
+  }
+  .container-1230 {
+    max-width: 960px;
+  }
+  .container-1200 {
+    max-width: 960px;
+  }
+  .container-1030 {
+    max-width: 960px;
+  }
+}
+
+/* Large Desktop - 1400px and above */
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1510px;
@@ -439,6 +568,67 @@ html {
     max-width: 1030px;
   }
 }
+/*---------------------------------
+	Desktop Responsive Adjustments (992px - 1399px)
+	These adjustments ensure proper spacing and sizing on
+	standard desktop and laptop screens
+---------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+  /* Reduce large horizontal spacing for standard desktops */
+  .ar-title-mlr,
+  .ar-title-mr {
+    margin-right: 30px;
+  }
+  .ar-title-mlr {
+    margin-left: 30px;
+  }
+  
+  /* Adjust section padding for desktop */
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Ensure proper text alignment in large screens */
+  .tp-section-title-wrap {
+    margin-bottom: 30px;
+  }
+  
+  /* Button padding adjustments */
+  .tp-btn-black,
+  .tp-btn,
+  .btn-effect {
+    padding: 12px 25px;
+  }
+  
+  /* Heading spacing */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+  }
+  
+  /* Container spacing */
+  .container-fluid,
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Tablet adjustments */
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Reduce margins on tablet */
+  .ar-title-mlr,
+  .ar-title-mr {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
 /*---------------------------------
 	typography css start 
 ---------------------------------*/
@@ -1564,11 +1754,11 @@ input[type=color] {
   padding: 18px 24px;
   letter-spacing: -0.01em;
   text-transform: capitalize;
-  color: var(--tp-common-black);
+  color: #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--tp-common-green-regular);
+  background: linear-gradient(135deg, #6e1a39 0%, #ed1f8d 50%, #53544f 100%);
 }
 .tp-btn-yellow-green.green-solid span {
   position: relative;
@@ -2648,7 +2838,7 @@ input[type=color] {
   right: 0;
   bottom: 0;
   z-index: 1000;
-  background-color: var(--tp-theme-green);
+  background-color: #d63384;
 }
 
 .preloader {
@@ -2981,6 +3171,11 @@ input[type=color] {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .design-service-accordion .accordion-body {
     padding-right: 250px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .design-service-accordion .accordion-body {
+    padding-right: 180px;
   }
 }
 @media (max-width: 767px) {
@@ -3810,6 +4005,16 @@ input[type=color] {
 }
 .tp-section-title-clash span.clash-subtitle-space-1 {
   padding-left: 230px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-section-title-clash span.clash-subtitle-space-1 {
+    padding-left: 180px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-section-title-clash span.clash-subtitle-space-1 {
+    padding-left: 130px;
+  }
 }
 @media (max-width: 767px) {
   .tp-section-title-clash span.clash-subtitle-space-1 {
