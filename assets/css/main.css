@@ -24736,13 +24736,13 @@ body.tp-magic-cursor #magic-cursor {
   padding: 30px;
   border-radius: 24px;
   margin: 17px;
-  min-width: 460px;
+  min-width: 360px;
   background: var(--tp-common-white);
   box-shadow: 0px 4px 12px 0px rgba(33, 33, 45, 0.08);
 }
 @media (max-width: 767px) {
   .app-testimonial-item {
-    min-width: 280px;
+    min-width: 240px;
     padding: 20px;
     margin: 12px;
   }
@@ -24811,21 +24811,23 @@ body.tp-magic-cursor #magic-cursor {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  animation: marquee-horizontal 30s linear infinite;
+  animation: marquee-horizontal 35s linear infinite;
   overflow-x: hidden;
 }
 @media (max-width: 767px) {
   .app-testimonial-wrapper {
-    animation: marquee-horizontal 25s linear infinite;
-    overflow-x: hidden;
+    animation: marquee-horizontal 28s linear infinite;
+    overflow-x: auto;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 }
 .app-testimonial-wrapper:hover {
   animation-play-state: paused;
 }
 .app-testimonial-slider {
-  margin-left: -50px;
+  margin-left: 0;
 }
 @media (max-width: 767px) {
   .app-testimonial-slider {
